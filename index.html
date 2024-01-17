@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<!-- Your HTML Here -->
-<body style="background-color:aquamarine;"></body>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 'lightcoral';
+        }
+
+        function resetBackgroundColor() {
+            document.body.style.backgroundColor = 'aquamarine';
+        }
+    </script>
+</head>
+
+<body style="background-color: aquamarine;">
 <div class="card">
-    <img src="headshot.jpeg" alt="Joo" style="width:100%">
+    <img src="headshot.jpeg" alt="Joo" style="width: 100%;">
     <h1>Joo Lim</h1>
     <p class="title"></p>
     <p>Hi! I'm Joo. I'm a 4th year, transfer, CS major student at Georgia Tech. I'm generally engaged in participating and coordinating fundraising events for social goods. One of my experiences was coordinating golf event in a community to fundraise for non-profit organization called Fisher House. I'm from Johns Creek, GA! </p>
-    <p><button>Hover me!</button></p>
+    <p><button onmouseover="changeBackgroundColor()" onmouseout="resetBackgroundColor()">Hover me!</button></p>
 </div>
 </body>
 </html>
